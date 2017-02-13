@@ -164,7 +164,7 @@ function AXHide(){document.getElementById('AjaxTester').style.display = "none";}
 var AXOPENED = false;
 
 window.addEventListener('load',AXInit);
-window.addEventListener('keypress',function(e){
+window.addEventListener('keydown',function(e){
 	if(e.key == "F8"){
 		if(AXOPENED){
 			AXHide();
