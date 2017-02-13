@@ -175,9 +175,6 @@ window.addEventListener('keypress',function(e){
 		}
 	}
 })
-window.addEventListener('keypress',function(e){
-	console.log(e.keyCode)
-})
 
 function AXSend(){
 	var method = document.getElementById('ax-method').value;
