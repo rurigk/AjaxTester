@@ -165,7 +165,7 @@ var AXOPENED = false;
 
 window.addEventListener('load',AXInit);
 window.addEventListener('keypress',function(e){
-	if(e.key == "Pause"){
+	if(e.key == "F10"){
 		if(AXOPENED){
 			AXHide();
 			AXOPENED = false;
