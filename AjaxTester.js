@@ -165,7 +165,7 @@ var AXOPENED = false;
 
 window.addEventListener('load',AXInit);
 window.addEventListener('keypress',function(e){
-	if(e.keyCode == 19){
+	if(e.key == "Pause"){
 		if(AXOPENED){
 			AXHide();
 			AXOPENED = false;
@@ -174,6 +174,9 @@ window.addEventListener('keypress',function(e){
 			AXOPENED = true;
 		}
 	}
+})
+window.addEventListener('keypress',function(e){
+	console.log(e.keyCode)
 })
 
 function AXSend(){
